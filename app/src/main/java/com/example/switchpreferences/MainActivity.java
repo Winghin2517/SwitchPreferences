@@ -10,6 +10,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TestPreferenceFragment testPreferenceFragment = new TestPreferenceFragment();
-        getFragmentManager().beginTransaction().replace(R.id.content_frame, testPreferenceFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, testPreferenceFragment).commit();
     }
 }
